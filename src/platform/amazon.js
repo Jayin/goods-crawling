@@ -24,7 +24,9 @@ module.exports = function (html) {
   }
   return goods
 }
-
+/**
+ * 获取图片列表
+ */
 function get_images () {
   let images = []
   let imgs = $('#altImages img')
@@ -33,15 +35,21 @@ function get_images () {
   })
   return images
 }
-
+/**
+ * 获取商品标题
+ */
 function get_title () {
   return $('#productTitle').text().trim()
 }
-
+/**
+ * 获取商品品牌
+ */
 function get_banner () {
   return $('#brand').text().trim()
 }
-
+/**
+ * 获取sku
+ */
 function get_sku () {
   let skus = [];
 //   console.log($('#twister>div'))   
@@ -74,7 +82,9 @@ function get_sku () {
   }
   return skus
 }
-
+/**
+ * 获取价格
+ */
 function get_price(){
     return $('#priceblock_ourprice').text().trim()
 }
