@@ -48,6 +48,12 @@ function get_banner () {
   return $('#brand').text().trim()
 }
 /**
+ * 描述
+ */
+function get_description (){
+    return ''
+}
+/**
  * 获取sku
  */
 function get_sku () {
