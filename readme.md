@@ -20,3 +20,8 @@ $ node ./src/bestbuy.js
 ```
 $ node ./src/sixpm.js
 ```
+
+- costco.com
+```
+$ node ./src/costco.js
+```

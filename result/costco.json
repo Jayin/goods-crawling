@@ -1,0 +1,36 @@
+{
+    "title": "Hudson River Men’s Short Sleeve Button Down Shirt",
+    "brand": "",
+    "description": "",
+    "images": [
+        "//richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&imageId=100246505-847__1&recipeName=350",
+        "//richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&itemId=100246505-847&recipeName=470"
+    ],
+    "attr": [],
+    "sku": [
+        {
+            "label": "Color",
+            "option": [
+                "Select Color",
+                "Black",
+                "Blue",
+                "Gray",
+                "Light Blue"
+            ]
+        },
+        {
+            "label": "Men's Size",
+            "option": [
+                "Select Men's Size",
+                "Small",
+                "Medium",
+                "Large",
+                "X-Large",
+                "XX-Large",
+                "Large Tall",
+                "X-Large Tall"
+            ]
+        }
+    ],
+    "price": "$--"
+}
