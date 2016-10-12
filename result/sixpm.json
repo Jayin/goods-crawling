@@ -1,0 +1,42 @@
+{
+    "title": "U.S. POLO ASSN. Slim Straight Corduroy Five-Pocket Jeans in Mood Indigo",
+    "brand": "",
+    "description": "",
+    "images": [
+        "http://www.zappos.com/images/z/3/7/6/6/3/4/3766348-p-MULTIVIEW_THUMBNAILS.jpg",
+        "http://www.zappos.com/images/z/3/7/6/6/3/4/3766348-1-MULTIVIEW_THUMBNAILS.jpg",
+        "http://www.zappos.com/images/z/3/7/6/6/3/4/3766348-2-MULTIVIEW_THUMBNAILS.jpg",
+        "http://www.zappos.com/images/z/3/7/6/6/3/4/3766348-3-MULTIVIEW_THUMBNAILS.jpg"
+    ],
+    "attr": [],
+    "sku": [
+        {
+            "label": "Color",
+            "option": []
+        },
+        {
+            "label": "Men's Size",
+            "option": [
+                "Select a Size",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "36",
+                "38",
+                "40"
+            ]
+        },
+        {
+            "label": "Men's Inseam",
+            "option": [
+                "Select a Inseam",
+                "30",
+                "32",
+                "34"
+            ]
+        }
+    ],
+    "price": "$34.99"
+}
