@@ -1,0 +1,32 @@
+{
+    "title": "Apple - iPhone 7 128GB - Silver (AT&T)",
+    "brand": "",
+    "description": "iPhone 7 features an all-new 12MP camera with an ƒ/1.8 aperture for great low-light photos and 4K video. Optical image stabilization. A 4.7-inch Retina HD display with wide color and 3D Touch. An A10 Fusion chip for up to 2x faster performance than iPhone 6. Touch ID. Faster LTE. The longest battery life in an iPhone. Immersive stereo sound, splash and water resistant, and iOS 10.",
+    "images": [
+        "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5580/5580373_sd.jpg;maxHeight=44;maxWidth=44",
+        "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5580/5580373_rd.jpg;maxHeight=44;maxWidth=44",
+        "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5580/5580373cv11d.jpg;maxHeight=44;maxWidth=44"
+    ],
+    "attr": [],
+    "sku": [
+        {
+            "label": "Color",
+            "option": [
+                "Black",
+                "Jet Black",
+                "Silver",
+                "Gold",
+                "Rose Gold"
+            ]
+        },
+        {
+            "label": "Internal Memory",
+            "option": [
+                "32GB",
+                "128GB",
+                "256GB"
+            ]
+        }
+    ],
+    "price": "$25.00/mo."
+}

@@ -3,21 +3,12 @@
 const fs = require('fs')
 const path = require('path')
 
-const amazon = require('./platform/amazon.js')
+const bestbuy = require('./platform/bestbuy.js')
 
-const Nightmare = require('nightmare')
-const nightmare = Nightmare({
-  show: true,
-  openDevTools: {
-    mode: 'detach'
-  },
-  webPreferences: {
-    // preload: path.join(__dirname, "preload/jquery.js")
-  },
-  //  loadTimeout: 5000 // in ms
-})
+const {nightmare} = require('./main_nightmare')
 
-let url = 'https://www.amazon.com/Nike-Rosherun-Black-Anthracite-Running/dp/B00BOR6I68/ref=sr_1_2?ie=UTF8&qid=1472541714&sr=8-2&keywords=nike'
+let url = 'http://www.bestbuy.com/site/apple-iphone-7-128gb-silver/5580373.p?id=bb5580373&skuId=5580373'
+
 nightmare
   .useragent('Chrome')
 
@@ -27,7 +18,6 @@ nightmare
   // .wait('#main')
   // .inject('js', path.join(__dirname, "preload/jquery.js"))
   // .wait('#brand')
-  // .wait('#productTitle')
   .end()
   .evaluate(function () {
     return document.documentElement.outerHTML
@@ -35,11 +25,11 @@ nightmare
   .then(function (result) {
     // console.log(result)
     // fs.writeFileSync(path.join(__dirname, 'tb.html'), result, {encoding: 'utf8'})
-    return amazon(result)
+    return bestbuy(result)
   })
   .then(function(result){
     console.log(result)
-    fs.writeFileSync(path.join(__dirname, 'amazon.json'), JSON.stringify(result,null, 4), {encoding: 'utf8'})
+    fs.writeFileSync(path.join(__dirname, '../result/bestbuy.json'), JSON.stringify(result,null, 4), {encoding: 'utf8'})
   })
   .catch(function (error) {
     console.error('Search failed:', error)
