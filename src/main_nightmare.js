@@ -1,6 +1,6 @@
 const Nightmare = require('nightmare')
 const nightmare = Nightmare({
-  show: true,
+  show: false,
   openDevTools: {
     mode: 'detach'
   },
@@ -9,7 +9,7 @@ const nightmare = Nightmare({
     images: false,
     // javascript: false,
   },
-   loadTimeout: 45*1000 // in ms
+   loadTimeout: 28*1000 // in ms
 })
 
 
