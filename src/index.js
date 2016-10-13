@@ -41,7 +41,7 @@ function fetchGoodsData(url, cb) {
             }
         })
         .catch(function (error) {
-            console.error('Search failed:', error)
+            // console.error('Search failed:', error)
             if (cb) {
                 cb(error)
             }
