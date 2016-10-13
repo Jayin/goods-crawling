@@ -64,8 +64,8 @@ function get_sku () {
             'label': '',
             'option': []
         }
-        if($(this).find('.variation-header').text() != ''){
-            sku.label = $(this).find('.variation-header').text().split(':')[0]
+        if($(this).find('.variation-header').text().trim() != ''){
+            sku.label = $(this).find('.variation-header').text().trim().split(':')[0]
         }
 
         let $options = $(this).find('ul li')
