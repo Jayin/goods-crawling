@@ -67,7 +67,7 @@ function get_sku () {
             'label': '',
             'option': []
         }
-        sku.label = $(this).find('div label').text()
+        sku.label = $(this).find('div label').text().trim()
 
         let $options = $(this).find('select option')
         if($options){
