@@ -1,18 +1,21 @@
 const Nightmare = require('nightmare')
-const nightmare = Nightmare({
-  show: false,
-  openDevTools: {
-    mode: 'detach'
-  },
-  webPreferences: {
-    // preload: path.join(__dirname, "preload/jquery.js")
-    images: false,
-    // javascript: false,
-  },
-   loadTimeout: 28*1000 // in ms
-})
+
+function createNightmare(options){
+  return Nightmare({
+    show: options.show || false,
+    openDevTools: {
+      mode: 'detach'
+    },
+    webPreferences: {
+      // preload: path.join(__dirname, "preload/jquery.js")
+      images: false,
+      // javascript: false,
+    },
+    loadTimeout: options.timeout || 28*1000 // in ms
+  })
+}
 
 
 module.exports = {
-    nightmare: nightmare
+    createNightmare: createNightmare
 }

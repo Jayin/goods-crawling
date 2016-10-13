@@ -2,7 +2,7 @@
 const site_detect = require('./lib/site_detect')
 const useragent = require('./lib/useragent')
 
-const {nightmare} = require('./main_nightmare')
+const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
 const path = require('path')
 
@@ -13,9 +13,10 @@ const platform = {
     costco: require('./platform/costco'),
 }
 
-function fetchGoodsData(url, cb) {
+function fetchGoodsData(url, options, cb) {
     let _platform = site_detect(url);
-
+    
+    nightmare = createNightmare(options)
     nightmare
         .useragent(useragent())
         .goto(url)
@@ -41,7 +42,6 @@ function fetchGoodsData(url, cb) {
             }
         })
         .catch(function (error) {
-            // console.error('Search failed:', error)
             if (cb) {
                 cb(error)
             }
@@ -53,5 +53,5 @@ function fetchGoodsData(url, cb) {
  * 获取商品数据
  */
 module.exports = {
-    fetchGoodsData: fetchGoodsData
+    fetchGoodsData: fetchGoodsData,
 }
