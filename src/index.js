@@ -34,11 +34,11 @@ function fetchGoodsData(url, cb) {
             return platform[_platform](result)
         })
         .then(function (result) {
-            console.log(result)
-            fs.writeFileSync(path.join(__dirname, '../result/'　+ _platform　+ '.json'), JSON.stringify(result, null, 4), { encoding: 'utf8' })
+            // console.log(result)
+            // fs.writeFileSync(path.join(__dirname, '../result/'　+ _platform　+ '.json'), JSON.stringify(result, null, 4), { encoding: 'utf8' })
             if (cb) {
                 cb(null, result)
-            }        
+            }
         })
         .catch(function (error) {
             console.error('Search failed:', error)
@@ -47,7 +47,7 @@ function fetchGoodsData(url, cb) {
             }
         })
 
-  
+
 }
 /**
  * 获取商品数据
