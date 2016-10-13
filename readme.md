@@ -8,25 +8,25 @@ $ npm install
 
 - amazon.com
 ```
-$ node ./src/amazon.js
+$ node ./test/amazon.js
 ```
 
 - bestbuy.com
 ```
-$ node ./src/bestbuy.js
+$ node ./test/bestbuy.js
 ```
 
 - 6pm.com
 ```
-$ node ./src/sixpm.js
+$ node ./test/sixpm.js
 ```
 
 - costco.com
 ```
-$ node ./src/costco.js
+$ node ./test/costco.js
 ```
 
-or checkout `./src/test.js`
+or checkout `./test/test.js`
 
 ### useage
 

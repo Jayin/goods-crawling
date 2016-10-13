@@ -3,9 +3,9 @@
 const fs = require('fs')
 const path = require('path')
 
-const bestbuy = require('./platform/bestbuy.js')
+const bestbuy = require('../src/platform/bestbuy.js')
 
-const {nightmare} = require('./main_nightmare')
+const {nightmare} = require('../src/main_nightmare')
 
 let url = 'http://www.bestbuy.com/site/apple-iphone-7-128gb-silver/5580373.p?id=bb5580373&skuId=5580373'
 

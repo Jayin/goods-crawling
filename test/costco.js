@@ -3,9 +3,9 @@
 const fs = require('fs')
 const path = require('path')
 
-const costco = require('./platform/costco.js')
+const costco = require('../src/platform/costco.js')
 
-const {nightmare} = require('./main_nightmare')
+const {nightmare} = require('../src/main_nightmare')
 
 let url = 'http://www.costco.com/Hudson-River-Men%E2%80%99s-Short-Sleeve-Button-Down-Shirt.product.100246505.html'
 
