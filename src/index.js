@@ -16,7 +16,7 @@ const platform = {
 function fetchGoodsData(url, options, cb) {
     let _platform = site_detect(url);
     
-    nightmare = createNightmare(options)
+    let nightmare = createNightmare(options)
     nightmare
         .useragent(useragent())
         .goto(url)
@@ -32,7 +32,10 @@ function fetchGoodsData(url, options, cb) {
         .then(function (result) {
             // console.log(result)
             // fs.writeFileSync(path.join(__dirname, 'tb.html'), result, {encoding: 'utf8'})
-            return platform[_platform](result)
+            return {
+                data: platform[_platform](result),
+                platform: _platform
+            }
         })
         .then(function (result) {
             // console.log(result)
