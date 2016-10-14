@@ -1,13 +1,13 @@
 ## goods-crawling [![Version](https://img.shields.io/npm/v/goods-crawling.svg)](https://www.npmjs.com/package/goods-crawling)
 > 爬取amazon/bestbuy/costco/6pm 的商品详情 
 
-### setup
+### Setup
 
 ```
 $ npm install
 ```
 
-### test
+### Test
 
 - amazon.com
 ```
@@ -31,7 +31,7 @@ $ node ./test/costco.js
 
 or checkout `./test/test.js`
 
-### useage
+### Usage
 
 ```js
 const {fetchGoodsData} = require('goods-crawling');
