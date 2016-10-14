@@ -5,9 +5,10 @@ const path = require('path')
 
 const amazon = require('../src/platform/amazon.js')
 
-const {nightmare} = require('../src/main_nightmare')
+const {createNightmare} = require('../src/main_nightmare')
 
 let url = 'https://www.amazon.com/Nike-Rosherun-Black-Anthracite-Running/dp/B00BOR6I68/ref=sr_1_2?ie=UTF8&qid=1472541714&sr=8-2&keywords=nike'
+let nightmare = createNightmare({show: false})
 nightmare
   .useragent('Chrome')
 

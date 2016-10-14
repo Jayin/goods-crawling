@@ -5,10 +5,10 @@ const path = require('path')
 
 const costco = require('../src/platform/costco.js')
 
-const {nightmare} = require('../src/main_nightmare')
+const {createNightmare} = require('../src/main_nightmare')
 
 let url = 'http://www.costco.com/Hudson-River-Men%E2%80%99s-Short-Sleeve-Button-Down-Shirt.product.100246505.html'
-
+let nightmare = createNightmare({show: false})
 nightmare
   .useragent('Chrome')
 

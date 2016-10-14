@@ -5,9 +5,10 @@ const path = require('path')
 
 const sixpm = require('../src/platform/sixpm.js')
 
-const {nightmare} = require('../src/main_nightmare')
+const {createNightmare} = require('../src/main_nightmare')
 
 let url = 'http://www.6pm.com/u-s-polo-assn-slim-straight-corduroy-five-pocket-jeans-in-mood-indigo-mood-indigo'
+let nightmare = createNightmare({show: false})
 nightmare
   .useragent('Chrome')
 
