@@ -29,7 +29,7 @@ module.exports = function (html) {
  */
 function get_images () {
   let images = []
-  let imgs = $('#altImages img')
+  let imgs = $('#imgTagWrapperId img')
   imgs.each(function (i, elem) {
     images.push($(this).attr('src'))
   })

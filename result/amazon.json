@@ -3,24 +3,13 @@
     "brand": "Nike",
     "description": "",
     "images": [
-        "https://images-na.ssl-images-amazon.com/images/I/41N3coiimrL._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/51%2BpAHeZGcL._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/41LvjPU3eRL._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/31sFzyKFQIL._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/41sQclnmWPL._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/412MCsre15L._US40_.jpg",
-        "https://images-na.ssl-images-amazon.com/images/I/41x%2BlKfAw3L._US40_.jpg"
+        "https://images-na.ssl-images-amazon.com/images/I/81y6jdi%2BCZL._UX395_.jpg"
     ],
     "attr": [],
     "sku": [
         {
             "label": "Size:",
             "option": [
-                "38 M EU",
-                "40 M EU",
-                "42 M EU",
-                "45 M EU",
-                "47 M EU",
                 "6 D(M) US",
                 "6.5 D(M) US",
                 "7 D(M) US",
@@ -36,14 +25,7 @@
                 "12 D(M) US",
                 "12.5 D(M) US",
                 "13 D(M) US",
-                "14 D(M) US",
-                "15 D(M) US",
-                "11 B(M) US Women / 11 D(M) US Men",
-                "39 M EU / 6 F(M) UK",
-                "40 M EU / 6 F(M) UK",
-                "41 M EU / 7 F(M) UK",
-                "Medium / 12 B(M) US",
-                "Medium / 8.5 B(M) US"
+                "14 D(M) US"
             ]
         },
         {
@@ -51,5 +33,5 @@
             "option": []
         }
     ],
-    "price": "$69.00 - $215.95"
+    "price": "$53.98 - $299.00"
 }
