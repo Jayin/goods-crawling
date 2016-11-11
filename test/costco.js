@@ -7,7 +7,7 @@ const costco = require('../src/platform/costco.js')
 
 const {createNightmare} = require('../src/main_nightmare')
 
-let url = 'http://www.costco.com/Hudson-River-Men%E2%80%99s-Short-Sleeve-Button-Down-Shirt.product.100246505.html'
+let url = 'http://www.costco.com/Diamondback-Edgewood-Hybrid-Bike-2016.product.100242696.html'
 let nightmare = createNightmare({show: false})
 nightmare
   .useragent('Chrome')

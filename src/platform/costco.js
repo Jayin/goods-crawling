@@ -26,7 +26,7 @@ module.exports = function (html) {
  */
 function get_images () {
   let images = []
-  let imgs = $('#zoomViewer img')
+  let imgs = $('img#productImage')
   imgs.each(function (i, elem) {
     images.push($(this).attr('src'))
   })

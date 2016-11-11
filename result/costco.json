@@ -1,36 +1,20 @@
 {
-    "title": "Hudson River Men’s Short Sleeve Button Down Shirt",
+    "title": "Diamondback Edgewood Hybrid Bike 2016",
     "brand": "",
     "description": "",
     "images": [
-        "//richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&imageId=100246505-847__1&recipeName=350",
-        "//richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&itemId=100246505-847&recipeName=470"
+        "//images.costco-static.com/ImageDelivery/imageService?profileId=12026540&itemId=100242696-847&recipeName=470"
     ],
     "attr": [],
     "sku": [
         {
-            "label": "Color",
+            "label": "Frame Size",
             "option": [
-                "Select Color",
-                "Black",
-                "Blue",
-                "Gray",
-                "Light Blue"
-            ]
-        },
-        {
-            "label": "Men's Size",
-            "option": [
-                "Select Men's Size",
-                "Small",
-                "Medium",
-                "Large",
-                "X-Large",
-                "XX-Large",
-                "Large Tall",
-                "X-Large Tall"
+                "Select Frame Size",
+                "Small - $249.99",
+                "X-Large - $249.99"
             ]
         }
     ],
-    "price": "$--"
+    "price": "$249.99"
 }
