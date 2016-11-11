@@ -26,9 +26,9 @@ module.exports = function (html) {
  */
 function get_images () {
   let images = []
-  let imgs = $('.carousel-indicators img')
-  imgs.each(function (i, elem) {
-    images.push($(this).attr('data-src'))
+  let imgs = $('.carousel-inner img')
+  imgs.each(function (index, elem) {
+    images.push($(this).attr('data-img-path'))
   })
   return images
 }
