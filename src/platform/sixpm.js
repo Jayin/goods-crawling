@@ -26,7 +26,7 @@ module.exports = function (html) {
  */
 function get_images () {
   let images = []
-  let imgs = $('#productImages img')
+  let imgs = $('#detailImage img')
   imgs.each(function (i, elem) {
     images.push($(this).attr('src'))
   })
