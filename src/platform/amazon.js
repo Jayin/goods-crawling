@@ -31,7 +31,12 @@ function get_images () {
   let images = []
   let imgs = $('#imgTagWrapperId img')
   imgs.each(function (i, elem) {
-    images.push($(this).attr('src'))
+    let img_url = $(this).attr('src')
+    img_url = img_url.trim()
+    if(img_url.indexOf('data:') === 0){
+      img_url = $(this).data('old-hires')
+    }
+    images.push(img_url)
   })
   return images
 }
