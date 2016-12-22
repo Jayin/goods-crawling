@@ -97,5 +97,9 @@ function get_sku () {
  * 获取价格
  */
 function get_price(){
-    return $('#priceblock_ourprice').text().trim()
+    let price = $('#priceblock_ourprice').text().trim()
+    if(price == ''){
+      price = $('#priceblock_dealprice').text().trim()
+    }
+    return price;
 }
