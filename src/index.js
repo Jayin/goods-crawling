@@ -1,6 +1,6 @@
 
 const site_detect = require('./lib/site_detect')
-const useragent = require('./lib/useragent')
+
 
 const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
@@ -13,43 +13,25 @@ const parsers = {
     costco: require('./parser/costco'),
 }
 
+const crawlers = {
+    amazon: require('./crawler/amazon'),
+    sixpm: require('./crawler/sixpm'),
+    bestbuy: require('./crawler/bestbuy'),
+    costco: require('./crawler/costco'),
+}
+
 function fetchGoodsData(url, options, cb) {
     let _platform = site_detect(url);
     
-    let nightmare = createNightmare(options)
-    nightmare
-        .useragent(useragent())
-        .goto(url)
-        // .type('form[action*="/search"] [name=p]', 'github nightmare')
-        // .click('form[action*="/search"] [type=submit]')
-        // .wait('#main')
-        // .inject('js', path.join(__dirname, "preload/jquery.js"))
-        // .wait('#brand')
-        .end()
-        .evaluate(function () {
-            return document.documentElement.outerHTML
-        })
-        .then(function (result) {
-            // console.log(result)
-            // fs.writeFileSync(path.join(__dirname, 'tb.html'), result, {encoding: 'utf8'})
-            return {
-                data: parsers[_platform](result),
-                platform: _platform
-            }
-        })
-        .then(function (result) {
-            // console.log(result)
-            // fs.writeFileSync(path.join(__dirname, '../result/'　+ _platform　+ '.json'), JSON.stringify(result, null, 4), { encoding: 'utf8' })
-            if (cb) {
-                cb(null, result)
-            }
-        })
-        .catch(function (error) {
-            if (cb) {
-                cb(error)
-            }
-        })
-
+    crawlers[_platform].fetch(url, options, function(err, html){
+        if(err){
+            return cb(err)
+            
+        }
+        let data = parsers[_platform](html)
+        cb(null, data)
+        
+    })
 
 }
 /**
