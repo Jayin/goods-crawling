@@ -6,11 +6,11 @@ const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
 const path = require('path')
 
-const platform = {
-    amazon: require('./platform/amazon'),
-    sixpm: require('./platform/sixpm'),
-    bestbuy: require('./platform/bestbuy'),
-    costco: require('./platform/costco'),
+const parser = {
+    amazon: require('./parser/amazon'),
+    sixpm: require('./parser/sixpm'),
+    bestbuy: require('./parser/bestbuy'),
+    costco: require('./parser/costco'),
 }
 
 function fetchGoodsData(url, options, cb) {
@@ -33,7 +33,7 @@ function fetchGoodsData(url, options, cb) {
             // console.log(result)
             // fs.writeFileSync(path.join(__dirname, 'tb.html'), result, {encoding: 'utf8'})
             return {
-                data: platform[_platform](result),
+                data: parser[_platform](result),
                 platform: _platform
             }
         })

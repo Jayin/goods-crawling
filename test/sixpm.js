@@ -3,7 +3,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const sixpm = require('../src/platform/sixpm.js')
+const sixpm = require('../src/parser/sixpm.js')
 
 const {createNightmare} = require('../src/main_nightmare')
 

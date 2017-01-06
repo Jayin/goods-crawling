@@ -3,7 +3,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const costco = require('../src/platform/costco.js')
+const costco = require('../src/parser/costco.js')
 
 const {createNightmare} = require('../src/main_nightmare')
 

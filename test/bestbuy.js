@@ -3,7 +3,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const bestbuy = require('../src/platform/bestbuy.js')
+const bestbuy = require('../src/parser/bestbuy.js')
 
 const {createNightmare} = require('../src/main_nightmare')
 
