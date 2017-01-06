@@ -14,6 +14,8 @@ crawler.fetch(url, {show: true}, function(err, html){
       return;
     }
     // console.log(html)
+    // html.
+    // fs.writeFileSync(path.join(__dirname, '../result/amazon.json'), html, {encoding: 'utf8'})
     let result = parser(html)
 
     console.log(result)
