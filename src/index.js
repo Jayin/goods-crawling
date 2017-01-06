@@ -6,7 +6,7 @@ const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
 const path = require('path')
 
-const parser = {
+const parsers = {
     amazon: require('./parser/amazon'),
     sixpm: require('./parser/sixpm'),
     bestbuy: require('./parser/bestbuy'),
@@ -33,7 +33,7 @@ function fetchGoodsData(url, options, cb) {
             // console.log(result)
             // fs.writeFileSync(path.join(__dirname, 'tb.html'), result, {encoding: 'utf8'})
             return {
-                data: parser[_platform](result),
+                data: parsers[_platform](result),
                 platform: _platform
             }
         })
