@@ -29,6 +29,12 @@ $ node ./test/sixpm.js
 $ node ./test/costco.js
 ```
 
+- function testing
+
+```
+$ node ./test/test.js
+```
+
 or checkout `./test/test.js`
 
 ### Usage
