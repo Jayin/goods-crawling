@@ -1,18 +1,14 @@
 
 const site_detect = require('./lib/site_detect')
-
-
 const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
 const path = require('path')
-
 const parsers = {
     amazon: require('./parser/amazon'),
     sixpm: require('./parser/sixpm'),
     bestbuy: require('./parser/bestbuy'),
     costco: require('./parser/costco'),
 }
-
 const crawlers = {
     amazon: require('./crawler/amazon'),
     sixpm: require('./crawler/sixpm'),
