@@ -70,7 +70,11 @@ function get_sku () {
     $skus.each(function () {
         let sku = {
             'label': '',
-            'option': []
+            'option': [],
+            'code': [],
+            'code_url': [],
+            'type': 'dropdown', //默认下拉框 【choose(选择框)、dropdown(下拉框)】
+            'active': '', //选中项的序号，从0开始
         }
         sku.label = $(this).find('div label').text().trim()
         //修正label尾部多处一个`：`冒号
@@ -80,13 +84,23 @@ function get_sku () {
 
         //下拉框
         let $options = $(this).find('select option')
-        if($options){
+        if($options.length > 0){
+            sku.type = 'dropdown'
             $options.each(function(i, elem){
                 //忽略第一位(不是选项)
                 if(i ==0 ){
                     return
                 } 
                 sku.option.push($(this).text().trim())
+
+                //code
+                let val = $(this).val().split(',');
+                sku.code.push(val[1])
+
+                //active
+                if($(this).attr('data-a-css-class') == 'dropdownSelect'){
+                  sku.active = i - 1; //因为第一位不是选项！
+                }
                 // console.log($(this).text().trim())
                 // $($('#twister > div')[0]).find('select option').each(function(i,e){console.log($(this).text().trim())})
             })
@@ -94,12 +108,22 @@ function get_sku () {
 
         //选择框
         let $boxs = $(this).find('ul li');
-        if($boxs){
+        if($boxs.length > 0){
+          sku.type = 'choose'
           $boxs.each(function(i, elm){
               let $imgs = $(this).find('img')
               let name = $imgs.attr('alt')
               
               sku.option.push($imgs.attr('alt').trim())
+
+              //code url
+              let val = $(this).attr('data-dp-url');
+              sku.code_url.push(val)
+
+              //active
+              if($(this).attr('class') == 'swatchSelect'){
+                sku.active = i;
+              }
           })
         }
         // console.log(sku);process.exit();
