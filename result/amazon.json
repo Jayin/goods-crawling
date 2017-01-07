@@ -3,7 +3,7 @@
     "brand": "Nike",
     "description": "",
     "images": [
-        "https://images-na.ssl-images-amazon.com/images/I/81y6jdi%2BCZL._UL1500_.jpg"
+        "https://images-na.ssl-images-amazon.com/images/I/41N3coiimrL._SX395_QL70_FMwebp_.jpg"
     ],
     "attr": [],
     "sku": [
@@ -29,7 +29,35 @@
         },
         {
             "label": "Color:",
-            "option": []
+            "option": [
+                "Black/Anthracite-Sail",
+                "Black / Anthracite / Sail",
+                "Black / White",
+                "Dark Loden / Black / Dark Loden / Medium Turquoise",
+                "Wolf Grey / White",
+                "Midnight Navy / Black / White",
+                "Red",
+                "Sport Red/Cool Grey-Sail",
+                "White",
+                "Black/Black",
+                "Black/White/Metallic Gold",
+                "University Red / Loyal Blue Sail",
+                "Fuchsia Frc / Black / Hyper Pnch / Light As",
+                "Orange",
+                "Varsity Maize/White-Black",
+                "Gym Red/White",
+                "Volt/Black-Hyper Punch",
+                "Varsity Red/Varsity Red-Varsity Red",
+                "Black, Black, White",
+                "Game Royal/Hyper Punch-Volt-Ivory",
+                "Military Blue/White/Total Orange",
+                "Green Strike/Black-white",
+                "Team Red/White-Medium Grey-Varsity Red",
+                "midnight navy cool grey sail 401",
+                "Green Strike/Black-White",
+                "GAME ROYAL/WHITE-BLACK",
+                "BLUE 446"
+            ]
         }
     ],
     "price": "$45.01 - $210.95"

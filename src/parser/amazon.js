@@ -74,6 +74,7 @@ function get_sku () {
         }
         sku.label = $(this).find('div label').text().trim()
 
+        //下拉框
         let $options = $(this).find('select option')
         if($options){
             $options.each(function(i, elem){
@@ -85,6 +86,17 @@ function get_sku () {
                 // console.log($(this).text().trim())
                 // $($('#twister > div')[0]).find('select option').each(function(i,e){console.log($(this).text().trim())})
             })
+        }
+
+        //选择框
+        let $boxs = $(this).find('ul li');
+        if($boxs){
+          $boxs.each(function(i, elm){
+              let $imgs = $(this).find('img')
+              let name = $imgs.attr('alt')
+              
+              sku.option.push($imgs.attr('alt').trim())
+          })
         }
         // console.log(sku);process.exit();
        skus.push(sku)
