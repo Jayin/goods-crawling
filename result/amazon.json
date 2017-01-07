@@ -3,12 +3,12 @@
     "brand": "Nike",
     "description": "",
     "images": [
-        "https://images-na.ssl-images-amazon.com/images/I/41N3coiimrL._SX395_QL70_FMwebp_.jpg"
+        "https://images-na.ssl-images-amazon.com/images/I/81y6jdi%2BCZL._UL1500_.jpg"
     ],
     "attr": [],
     "sku": [
         {
-            "label": "Size:",
+            "label": "Size",
             "option": [
                 "6 D(M) US",
                 "6.5 D(M) US",
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "label": "Color:",
+            "label": "Color",
             "option": [
                 "Black/Anthracite-Sail",
                 "Black / Anthracite / Sail",

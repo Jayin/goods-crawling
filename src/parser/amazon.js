@@ -73,6 +73,10 @@ function get_sku () {
             'option': []
         }
         sku.label = $(this).find('div label').text().trim()
+        //修正label尾部多处一个`：`冒号
+        if(sku.label.endsWith(':')){
+          sku.label = sku.label.substring(0, sku.label.length - 1)
+        }
 
         //下拉框
         let $options = $(this).find('select option')
