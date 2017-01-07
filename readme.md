@@ -35,8 +35,6 @@ $ node ./test/costco.js
 $ node ./test/test.js
 ```
 
-or checkout `./test/test.js`
-
 ### Usage
 
 ```js
