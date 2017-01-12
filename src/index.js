@@ -1,5 +1,5 @@
 
-const site_detect = require('./lib/site_detect')
+const site_detect = require('shopping_site_detect')
 const {createNightmare} = require('./main_nightmare')
 const fs = require('fs')
 const path = require('path')
