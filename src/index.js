@@ -25,7 +25,11 @@ function fetchGoodsData(url, options, cb) {
             
         }
         let data = parsers[_platform](html)
-        cb(null, data)
+        let ret = {
+            data: data,
+            platform: _platform
+        }
+        cb(null, ret)
         
     })
 
