@@ -88,6 +88,7 @@ function get_sku () {
             'code_url': [],
             'type': '', //【choose(选择框)、dropdown(下拉框)】
             'active': '', //选中项的序号，从0开始
+            'available': [], //对应的选项是否可选
         }
         sku.label = $(this).find('div label').text().trim()
         //修正label尾部多处一个`：`冒号
@@ -136,6 +137,14 @@ function get_sku () {
               //active
               if($(this).attr('class') == 'swatchSelect'){
                 sku.active = i;
+              }
+
+              //该选项是否可选
+              if($(this).attr('class') == 'swatchSelect' || $(this).attr('class') == 'swatchAvailable'){
+                sku.available.push(true)
+              }
+              if($(this).attr('class') == 'swatchUnavailable'){
+                sku.available.push(false)
               }
           })
         }
