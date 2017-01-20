@@ -22,14 +22,6 @@
             ],
             "type": "choose",
             "active": 0
-        },
-        {
-            "label": "Product Packaging",
-            "option": [],
-            "code": [],
-            "code_url": [],
-            "type": "dropdown",
-            "active": ""
         }
     ],
     "price": "$69.50"

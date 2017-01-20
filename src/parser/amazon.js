@@ -73,7 +73,7 @@ function get_sku () {
             'option': [],
             'code': [],
             'code_url': [],
-            'type': 'dropdown', //默认下拉框 【choose(选择框)、dropdown(下拉框)】
+            'type': '', //【choose(选择框)、dropdown(下拉框)】
             'active': '', //选中项的序号，从0开始
         }
         sku.label = $(this).find('div label').text().trim()
@@ -84,6 +84,7 @@ function get_sku () {
 
         //下拉框
         let $options = $(this).find('select option')
+        console.log($options)
         if($options.length > 0){
             sku.type = 'dropdown'
             $options.each(function(i, elem){
@@ -126,9 +127,11 @@ function get_sku () {
               }
           })
         }
-        // console.log(sku);process.exit();
-       skus.push(sku)
-    //   console.log($(this).find('div label').text())
+
+        if(sku.type != ''){
+            // console.log(sku);process.exit();
+            skus.push(sku)
+        }
     })
   }
   return skus
