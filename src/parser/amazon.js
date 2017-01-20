@@ -141,5 +141,8 @@ function get_price(){
     if(price == ''){
       price = $('#priceblock_dealprice').text().trim()
     }
+    if(price == ''){
+      price = $('#priceblock_saleprice').text().trim()
+    }
     return price;
 }

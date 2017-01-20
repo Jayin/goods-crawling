@@ -11,7 +11,7 @@ function createNightmare(options){
       images: false,
       // javascript: false,
     },
-    loadTimeout: options.timeout || 28*1000 // in ms
+    loadTimeout: options.timeout || 38*1000 // in ms
   })
 }
 

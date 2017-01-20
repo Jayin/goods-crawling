@@ -1,116 +1,36 @@
 {
-    "title": "Nike Men's Rosherun Running Shoe.",
-    "brand": "Nike",
+    "title": "Pebble Time Smartwatch - Black",
+    "brand": "Pebble Technology Corp",
     "description": "",
     "images": [
-        "https://images-na.ssl-images-amazon.com/images/I/41AYce2-PWL._SX395_QL70_FMwebp_.jpg"
+        ""
     ],
     "attr": [],
     "sku": [
         {
-            "label": "Size",
-            "option": [
-                "6 D(M) US",
-                "6.5 D(M) US",
-                "7 D(M) US",
-                "7.5 D(M) US",
-                "8 D(M) US",
-                "8.5 D(M) US",
-                "9 D(M) US",
-                "9.5 D(M) US",
-                "10 D(M) US",
-                "10.5 D(M) US",
-                "11 D(M) US",
-                "11.5 D(M) US",
-                "12 D(M) US",
-                "12.5 D(M) US",
-                "13 D(M) US"
-            ],
-            "code": [
-                "B00L9S9DL4",
-                "B0071XBGEI",
-                "B0071XBGSE",
-                "B0060Q37IK",
-                "B0071XBHL0",
-                "B0071XBI5A",
-                "B00L9S9H8I",
-                "B019HHYYVC",
-                "B00L9S9JDQ",
-                "B00L9S9K1C",
-                "B019HHZ1AA",
-                "B00L9S9L2A",
-                "B00L9S9LGG",
-                "B00L9S9MFG",
-                "B00L9S9MUQ"
-            ],
-            "code_url": [],
-            "type": "dropdown",
-            "active": 6
-        },
-        {
             "label": "Color",
             "option": [
-                "University Red / Loyal Blue Sail",
-                "Black / Anthracite / Sail",
-                "Black / White",
-                "Dark Loden / Black / Dark Loden / Medium Turquoise",
-                "Wolf Grey / White",
-                "Midnight Navy / Black / White",
-                "Black/Anthracite-Sail",
+                "Black",
                 "Red",
-                "Sport Red/Cool Grey-Sail",
-                "White",
-                "Black/Black",
-                "Black/White/Metallic Gold",
-                "Fuchsia Frc / Black / Hyper Pnch / Light As",
-                "Orange",
-                "Varsity Maize/White-Black",
-                "Gym Red/White",
-                "Volt/Black-Hyper Punch",
-                "Varsity Red/Varsity Red-Varsity Red",
-                "Black, Black, White",
-                "Game Royal/Hyper Punch-Volt-Ivory",
-                "Military Blue/White/Total Orange",
-                "Green Strike/Black-white",
-                "Team Red/White-Medium Grey-Varsity Red",
-                "midnight navy cool grey sail 401",
-                "Green Strike/Black-White",
-                "GAME ROYAL/WHITE-BLACK",
-                "BLUE 446"
+                "White"
             ],
             "code": [],
             "code_url": [
                 "",
-                "/dp/B005ODHIDK/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B000G4KJ06/ref=twister_B000P6GKOO",
-                "/dp/B00GDGHEYA/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B00L890DIQ/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B00L9S9GUC/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B005ODHBE6/ref=twister_B000P6GKOO",
-                "/dp/B0170JOQD0/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B001AZAU2C/ref=twister_B000P6GKOO",
-                "/dp/B0060Q37Z8/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B00RW59TF8/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B000G4KIXO/ref=twister_B000P6GKOO?_encoding=UTF8&psc=1",
-                "/dp/B00H25Z9A2/ref=twister_B000P6GKOO",
-                "/dp/B00ICPUFWS/ref=twister_B000P6GKOO",
-                "/dp/B014GF78AE/ref=twister_B000P6GKOO",
-                "/dp/B00RW5B98I/ref=twister_B000P6GKOO",
-                "/dp/B00YD0LSOU/ref=twister_B000P6GKOO",
-                "/dp/B015GGI068/ref=twister_B000P6GKOO",
-                "/dp/B000G4KI7K/ref=twister_B000P6GKOO",
-                "/dp/B00TUP2KWW/ref=twister_B000P6GKOO",
-                "/dp/B003ID274I/ref=twister_B000P6GKOO",
-                "/dp/B014GF6W1K/ref=twister_B000P6GKOO",
-                "/dp/B019J1SLU6/ref=twister_B000P6GKOO",
-                "/dp/B01AZ4BAE0/ref=twister_B000P6GKOO",
-                "/dp/B014GF70WK/ref=twister_B000P6GKOO",
-                "/dp/B00RW5AJNO/ref=twister_B000P6GKOO",
-                "/dp/B016OLTJQO/ref=twister_B000P6GKOO"
+                "/dp/B010Q4OX70/ref=twister_B011TTBX7Y?_encoding=UTF8&psc=1",
+                "/dp/B0106JNIKS/ref=twister_B011TTBX7Y?_encoding=UTF8&psc=1"
             ],
             "type": "choose",
             "active": 0
+        },
+        {
+            "label": "Product Packaging",
+            "option": [],
+            "code": [],
+            "code_url": [],
+            "type": "dropdown",
+            "active": ""
         }
     ],
-    "price": "$104.99"
+    "price": "$69.50"
 }
