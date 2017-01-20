@@ -1,6 +1,7 @@
 'use strict'
 
 const cheerio = require('cheerio')
+const _ = require('lodash')
 
 let content = ''
 let $ = null
@@ -30,14 +31,26 @@ module.exports = function (html) {
 function get_images () {
   let images = []
   let imgs = $('#imgTagWrapperId img')
-  imgs.each(function (i, elem) {
-    let img_url = $(this).attr('src')
-    img_url = img_url.trim()
-    if(img_url.indexOf('data:') === 0){
-      img_url = $(this).data('old-hires')
-    }
-    images.push(img_url)
-  })
+
+  // console.dir(imgs);
+ if(imgs && imgs.length > 0){
+      imgs.each(function (i, elem) {
+        let img_url = $(this).attr('src')
+        img_url = img_url.trim()
+        if(img_url.indexOf('data:') === 0){
+          img_url = $(this).data('old-hires')
+        }
+
+         if(!img_url || img_url == ''){
+          let keys = _.keys($(this).data('a-dynamic-image'))
+          if(keys && keys.length > 0){
+            img_url = keys[0]
+          }
+        }
+        images.push(img_url)
+      })
+  }
+
   return images
 }
 /**
@@ -84,7 +97,6 @@ function get_sku () {
 
         //下拉框
         let $options = $(this).find('select option')
-        console.log($options)
         if($options.length > 0){
             sku.type = 'dropdown'
             $options.each(function(i, elem){
