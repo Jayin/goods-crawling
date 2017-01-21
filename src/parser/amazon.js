@@ -114,6 +114,10 @@ function get_sku () {
                 if($(this).attr('data-a-css-class') == 'dropdownSelect'){
                   sku.active = i - 1; //因为第一位不是选项！
                 }
+
+                //该选项是否可选
+                sku.available.push(true)
+
                 // console.log($(this).text().trim())
                 // $($('#twister > div')[0]).find('select option').each(function(i,e){console.log($(this).text().trim())})
             })
