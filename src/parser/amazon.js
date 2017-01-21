@@ -85,7 +85,6 @@ function get_sku () {
             'label': '',
             'option': [],
             'code': [],
-            'code_url': [],
             'type': '', //【choose(选择框)、dropdown(下拉框)】
             'active': '', //选中项的序号，从0开始
             'available': [], //对应的选项是否可选
@@ -130,9 +129,9 @@ function get_sku () {
               
               sku.option.push($imgs.attr('alt').trim())
 
-              //code url
-              let val = $(this).attr('data-dp-url');
-              sku.code_url.push(val)
+              //code
+              let code = $(this).attr('data-defaultasin'); 
+              sku.code.push(code)
 
               //active
               if($(this).attr('class') == 'swatchSelect'){
