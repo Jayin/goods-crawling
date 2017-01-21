@@ -1,15 +1,11 @@
 const request = require('request')
 const useragent = require('../lib/useragent')
-const random_useragent = require('random-useragent')
 
 function fetch (url, options, cb) {
   let opt = {
       url: url,
       headers: {
-        'User-Agent': random_useragent.getRandom(function(ua){
-            //取linux + windows 的浏览器
-            return ua.browserName == 'Chrome' || ua.browserName == 'Firefox';
-        }),
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
         'Host': 'www.amazon.com',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'Accept-Encoding': 'identity',
