@@ -8,7 +8,7 @@ function fetch (url, options, cb) {
       headers: {
         'User-Agent': random_useragent.getRandom(function(ua){
             //取linux + windows 的浏览器
-            return ua.osName == 'Windows' || ua.osName == 'Linux' || ua.browserName == 'Chrome' || ua.browserName == 'Firefox';
+            return ua.browserName == 'Chrome' || ua.browserName == 'Firefox';
         }),
         'Host': 'www.amazon.com',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
