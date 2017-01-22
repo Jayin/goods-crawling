@@ -62,7 +62,11 @@ function get_sku () {
     $skus.each(function () {
         let sku = {
             'label': '',
-            'option': []
+            'option': [],
+            'code': [],
+            'type': '', //【choose(选择框)、dropdown(下拉框)】
+            'active': '', //选中项的序号，从0开始
+            'available': [], //对应的选项是否可选
         }
         if($(this).find('.variation-header').text().trim() != ''){
             sku.label = $(this).find('.variation-header').text().trim().split(':')[0]
