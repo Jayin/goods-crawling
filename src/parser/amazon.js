@@ -1,4 +1,3 @@
-'use strict'
 
 const cheerio = require('cheerio')
 const _ = require('lodash')
