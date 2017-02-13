@@ -128,9 +128,16 @@ function get_sku () {
           sku.type = 'choose'
           $boxs.each(function(i, elm){
               let $imgs = $(this).find('img')
-              let name = $imgs.attr('alt')
-              
-              sku.option.push($imgs.attr('alt').trim())
+              if($imgs.length > 0){
+                  let name = $imgs.attr('alt').trim()
+                  sku.option.push(name)
+              }else{
+                let $buttons = $(this).find('button')
+                if($buttons > 0){
+                    let name = $buttons.text().trim()
+                    sku.option.push(name)
+                }
+              }
 
               //code
               let code = $(this).attr('data-defaultasin'); 
